@@ -1,48 +1,54 @@
-// ! 1. Find Missing Number in Array
 
-// function findMissing(arr) {
-//   let arraySum = 0;
-//     let n = arr.length;
-//     // Sum of Natural Number formula
-//   let SumOfNatural = (n * (n + 1) )/ 2;
+// for (let i = 5; i <= 1; i++){
+//     let row = '';
+//     for (let j = i; j >=1; j--){
+//         row += '*';
+//     }
+//     console.log(row);
+// }
+// let array = [1, 2, 3, 4, 5,4,5,3];
+// console.log(array)
+// for (let i = 0; i < array.length; i++){
+//     for (let j = i + 1; j < array.length; j++)
+//     {
+//         if (array[i]== array[j]) {
+            
+//             console.log("Duplicate Number:",array[j]);
+//         }
+        
+//     }
+// }
 
-//   for (let i = 0; i < arr.length; i++) {
-//     arraySum += arr[i];
-//   }
-//   return SumOfNatural- arraySum;
+// let array = [10,20,30,40,50];
+// let max =0;
+// for (let i = 0; i < array.length; i++){
+    //     if (array[i] > max) {
+        //         max = array[i];
+        //     }
+        // }
+        // console.log("Largest Number:", max)
+        
+// let array = [10, 20, 30, 40, 45,55];
+// let max = 0;
+// let secondMax = 0;
+// for (let i = 0; i < array.length; i++){
+//         if (array[i] > max) {
+//             secondMax = max;
+//             max = array[i];
+//         }
+//         else if (array[i] > secondMax && array[i] !== max) {
+//             secondMax= array[i];
+        
+//     }
 // }
-// let array = [0,1, 2, 4, 5];
-// let result = findMissing(array);
-// console.log("Missing Number is:",result);
+// console.log("Maximum:", max);
+// console.log("SecondMax:", secondMax);
 
-// * 2. Reverse  String
-// let str1 = '';
-// let len = 0;
-// let str = "Hello World";
-// len = str.length;
-// for (let i =len-1; i>=0; i--){
-//     str1+=str[i]
-// }
-// console.log("Reverse String:", str1);
 
-
-// ! 3. Highest Most Occurring Character in String
-// let str = 'aabbbdddd';
-// let maxcount = 0;
-// let maxChar = '';
-// count = [];
-// let char;
-// for (let i = 0; i < str.length; i++){
-// char=str[i]
-    // console.log(char)
-// }
-// if (!count[char]) {
-//     count[char] = 1;
-// } else {
-//     count[char]++;
-// }
-// if ( count[char]> maxcount) {
-//     maxcount = char;
-//     maxChar =char;
-// }
-// console.log("Most Occuring:",maxChar)
+let a = 40;
+let b = 30;
+console.log("Old Value A:",a ," value B:",b);
+a = a - b;
+b = a + b;
+a = b - a;
+console.log("New Value A:",a ," value B:",b);
